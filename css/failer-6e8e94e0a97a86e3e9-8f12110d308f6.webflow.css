@@ -417,6 +417,11 @@ figcaption {
   line-height: 1.25;
 }
 
+.display-3.text-white {
+  width: 645px;
+  max-width: 105%;
+}
+
 .paragraph-large {
   margin-bottom: 35px;
   font-size: 25px;
@@ -473,7 +478,6 @@ figcaption {
 
 .button.cc-small {
   background-image: linear-gradient(#8a307f 15%, #af3ea1);
-  margin-left: 0;
   padding: 10px 22px;
   display: inline-block;
 }
@@ -626,7 +630,6 @@ figcaption {
 
 .nav-menu-flex {
   align-items: center;
-  margin-right: 0;
   display: flex;
 }
 
@@ -726,10 +729,7 @@ figcaption {
 }
 
 .navbar-button-wrapper {
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
   flex: none;
-  display: flex;
 }
 
 .hero-grid {
@@ -852,7 +852,7 @@ figcaption {
 }
 
 .tab-pane-grid {
-  grid-column-gap: 70px;
+  grid-column-gap: 45px;
   grid-row-gap: 50px;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
@@ -915,7 +915,7 @@ figcaption {
 }
 
 .rounded.shadow {
-  width: 62%;
+  width: 100%;
 }
 
 .headline-reasons {
@@ -2088,6 +2088,10 @@ figcaption {
   width: 2rem;
 }
 
+.text-block-2 {
+  width: 347px;
+}
+
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -2256,7 +2260,7 @@ figcaption {
   }
 
   .paragraph-large {
-    color: #f0f0f8;
+    color: #343f52;
     margin-bottom: 30px;
   }
 
@@ -2276,6 +2280,11 @@ figcaption {
 
   .button.cc-small.action.nav {
     margin-left: 0;
+  }
+
+  .logo {
+    position: relative;
+    right: 452px;
   }
 
   .navbar {
@@ -2632,7 +2641,7 @@ figcaption {
   }
 
   .section-2.free-uses {
-    top: 84px;
+    top: 78px;
   }
 
   .image-7 {
@@ -2712,7 +2721,6 @@ figcaption {
 
   .navbar-brand-mobile.w--current {
     flex: 0 auto;
-    order: -1;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -2721,7 +2729,6 @@ figcaption {
 
   .nav-link-mobile {
     color: #000;
-    display: none;
   }
 
   .doodle-shine {
@@ -2762,19 +2769,16 @@ figcaption {
   }
 
   .div-block-9 {
-    height: 3rem;
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .text-block {
-    align-self: center;
-    font-size: .8rem;
-    text-decoration: none;
+    font-size: 1rem;
   }
 
   .section-2.free-uses {
-    top: 77px;
+    top: 71px;
   }
 
   .image-7 {
@@ -2794,12 +2798,12 @@ figcaption {
   }
 
   .container {
-    min-height: 71px;
     flex: 1;
     justify-content: space-between;
     align-self: stretch;
     padding-left: 20px;
     padding-right: 20px;
+    display: block;
   }
 
   .sg-button-block {
@@ -2834,8 +2838,7 @@ figcaption {
   }
 
   .logo.cc {
-    max-width: 85%;
-    padding-left: 0;
+    padding-left: 15px;
   }
 
   .navbar {
@@ -2863,33 +2866,11 @@ figcaption {
     display: none;
   }
 
-  .navbar-brand-mobile.w--current {
-    order: -1;
-    margin-bottom: 10px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   .nav-link-mobile {
-    color: #8a307f;
-    order: -1;
-    padding-bottom: 0;
-    display: block;
+    color: #000;
   }
 
-  .nav-link-mobile:hover {
-    color: #8a307f;
-  }
-
-  .nav-link-mobile.w--current {
-    color: #8a307f;
-    order: -1;
-    justify-content: flex-end;
-    padding-top: 6px;
-    padding-bottom: 0;
-  }
-
-  .nav-link-mobile.w--current:hover {
+  .nav-link-mobile:hover, .nav-link-mobile.w--current, .nav-link-mobile.w--current:hover {
     color: #8a307f;
   }
 
@@ -2928,24 +2909,12 @@ figcaption {
     padding-right: 0;
   }
 
-  .footer-grid {
-    grid-template-rows: auto auto;
-    grid-template-areas: ". ."
-                         "Area Area";
+  .footer.background-dark {
+    display: block;
   }
 
   .text-field, .text-field-dark {
     height: 47px;
-  }
-
-  .social-links {
-    width: auto;
-    min-width: auto;
-    display: block;
-  }
-
-  .social-link {
-    justify-content: flex-end;
   }
 
   .container-3 {
@@ -3008,167 +2977,144 @@ figcaption {
   }
 
   .section-2.free-uses {
-    top: 71px;
+    top: 67px;
   }
 
   .image-7 {
     width: 1.5rem;
   }
-
-  .div-block-10 {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template: ". ."
-                   "Area Area"
-                   / 1fr .25fr;
-    grid-auto-columns: 1fr;
-    display: grid;
-  }
-
-  .div-block-11 {
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    align-self: center;
-    align-items: center;
-    display: flex;
-  }
 }
 
-#w-node-_33d5ff0a-a9ee-1551-3986-b35178efb1e7-523a505b {
+#w-node-_33d5ff0a-a9ee-1551-3986-b35178efb1e7-1ddcb7b2 {
   grid-area: span 1 / span 1 / span 1 / span 1;
-  justify-self: auto;
+  align-self: stretch;
+  justify-self: stretch;
 }
 
-#w-node-b791cf82-82b9-7055-7e04-4f63f43e2f91-523a505b, #w-node-b8bc016a-487b-09be-d595-e5e9ca4a85d7-523a505b, #w-node-b8bc016a-487b-09be-d595-e5e9ca4a85d9-523a505b, #w-node-_5010c074-a178-9e7c-8e5c-b0a0587d1c4b-523a505b, #w-node-_5010c074-a178-9e7c-8e5c-b0a0587d1c4d-523a505b {
+#w-node-b791cf82-82b9-7055-7e04-4f63f43e2f91-1ddcb7b2 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_72b8af2d-5524-9ad8-95e6-936ff7033a26-523a505b {
+#w-node-b8bc016a-487b-09be-d595-e5e9ca4a85d7-1ddcb7b2 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: center;
+}
+
+#w-node-b8bc016a-487b-09be-d595-e5e9ca4a85d9-1ddcb7b2 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_5010c074-a178-9e7c-8e5c-b0a0587d1c4b-1ddcb7b2 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: center;
+}
+
+#w-node-_5010c074-a178-9e7c-8e5c-b0a0587d1c4d-1ddcb7b2 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_72b8af2d-5524-9ad8-95e6-936ff7033a26-1ddcb7b2 {
   grid-area: span 1 / span 5 / span 1 / span 5;
   align-self: start;
 }
 
-#w-node-e936af14-d0d6-3191-8d17-d905eda72cd8-523a505b {
+#w-node-e936af14-d0d6-3191-8d17-d905eda72cd8-1ddcb7b2 {
   grid-area: 1 / 7 / 2 / 13;
 }
 
-#w-node-_3708f77a-3338-9c31-08c8-e646bdf0a582-523a505b, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a58c-523a505b, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a596-523a505b, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a5a0-523a505b, #w-node-_5c141f12-d9d8-ebed-f29e-6c4978afe931-cd8efba7, #w-node-_45ed9a9d-a0f6-dd96-4c58-f563f8c0af7b-cd8efba7 {
+#w-node-_3708f77a-3338-9c31-08c8-e646bdf0a582-1ddcb7b2, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a58c-1ddcb7b2, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a596-1ddcb7b2, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a5a0-1ddcb7b2, #w-node-_5c141f12-d9d8-ebed-f29e-6c4978afe931-cd8efba7, #w-node-_45ed9a9d-a0f6-dd96-4c58-f563f8c0af7b-cd8efba7 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_2dbc92e1-f640-1dc3-f27e-e52bbea09c40-523a505d {
+#w-node-_2dbc92e1-f640-1dc3-f27e-e52bbea09c40-1ddcb7b4 {
   grid-area: 1 / 3 / 2 / 11;
   justify-self: center;
 }
 
-#w-node-b970029d-e571-0109-e799-435511aae61b-523a505e {
+#w-node-b970029d-e571-0109-e799-435511aae61b-1ddcb7b5 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-b983a49d-4767-6b80-3997-caa78bbd2f8b-523a505e {
+#w-node-b983a49d-4767-6b80-3997-caa78bbd2f8b-1ddcb7b5 {
   grid-area: span 1 / span 3 / span 1 / span 3;
 }
 
-#w-node-_83d6f05d-741e-b844-451e-a28484925089-523a505f {
+#w-node-_83d6f05d-741e-b844-451e-a28484925089-1ddcb7b6 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-da5bc5d1-5870-faa9-f42d-73310396d194-523a505f, #w-node-_8402628b-b44e-9f04-36d7-49de7eaa169e-523a505f, #w-node-_63d9265d-44e4-fe1b-fb89-961a3581021a-523a505f, #w-node-cd193904-5227-c440-3b84-8eef6d854f4a-523a5060, #w-node-ad7761c5-0720-1086-f378-34e757b0cffd-523a5060 {
+#w-node-cd193904-5227-c440-3b84-8eef6d854f4a-1ddcb7b7, #w-node-ad7761c5-0720-1086-f378-34e757b0cffd-1ddcb7b7 {
   grid-area: span 1 / span 3 / span 1 / span 3;
 }
 
-#w-node-c81625a2-c909-6fcf-246f-1f1f19b12839-523a5060, #w-node-c81625a2-c909-6fcf-246f-1f1f19b1283a-523a5060, #w-node-ad7761c5-0720-1086-f378-34e757b0cfff-523a5060, #w-node-ad7761c5-0720-1086-f378-34e757b0d000-523a5060, #w-node-_7027d086-beb1-cddc-5cdb-f269ad9343e3-523a5060, #w-node-_7027d086-beb1-cddc-5cdb-f269ad9343e4-523a5060, #w-node-_6405011f-2a7e-8ce7-7169-6f6b1ee055c5-523a5060, #w-node-_6405011f-2a7e-8ce7-7169-6f6b1ee055c6-523a5060, #w-node-_42cacc95-a55c-b1f0-3043-33031bbb9305-523a5060, #w-node-_42cacc95-a55c-b1f0-3043-33031bbb9306-523a5060 {
+#w-node-c81625a2-c909-6fcf-246f-1f1f19b12839-1ddcb7b7, #w-node-c81625a2-c909-6fcf-246f-1f1f19b1283a-1ddcb7b7, #w-node-ad7761c5-0720-1086-f378-34e757b0cfff-1ddcb7b7, #w-node-ad7761c5-0720-1086-f378-34e757b0d000-1ddcb7b7, #w-node-_7027d086-beb1-cddc-5cdb-f269ad9343e3-1ddcb7b7, #w-node-_7027d086-beb1-cddc-5cdb-f269ad9343e4-1ddcb7b7, #w-node-_6405011f-2a7e-8ce7-7169-6f6b1ee055c5-1ddcb7b7, #w-node-_6405011f-2a7e-8ce7-7169-6f6b1ee055c6-1ddcb7b7, #w-node-_42cacc95-a55c-b1f0-3043-33031bbb9305-1ddcb7b7, #w-node-_42cacc95-a55c-b1f0-3043-33031bbb9306-1ddcb7b7 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_9f7e7334-9ae7-5911-fafe-fba726522020-523a5060, #w-node-c2b652eb-a6a6-0a7e-9c10-9efbc862e0e4-523a5060, #w-node-_34dcb27b-e423-35af-8dd0-6545b5f0bb05-523a5060, #w-node-_32f9502b-72a1-33f0-a67d-4b6460ba94d7-523a5060 {
+#w-node-_9f7e7334-9ae7-5911-fafe-fba726522020-1ddcb7b7, #w-node-c2b652eb-a6a6-0a7e-9c10-9efbc862e0e4-1ddcb7b7, #w-node-_34dcb27b-e423-35af-8dd0-6545b5f0bb05-1ddcb7b7, #w-node-_32f9502b-72a1-33f0-a67d-4b6460ba94d7-1ddcb7b7 {
   grid-area: span 1 / span 3 / span 1 / span 3;
 }
 
 @media screen and (min-width: 1280px) {
-  #w-node-b983a49d-4767-6b80-3997-caa78bbd2f88-523a505e {
+  #w-node-b983a49d-4767-6b80-3997-caa78bbd2f88-1ddcb7b5 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-b983a49d-4767-6b80-3997-caa78bbd2f8b-523a505e {
+  #w-node-b983a49d-4767-6b80-3997-caa78bbd2f8b-1ddcb7b5 {
     grid-area: 1 / 2 / 2 / 4;
   }
 
-  #w-node-da5bc5d1-5870-faa9-f42d-73310396d191-523a505f {
+  #w-node-cd193904-5227-c440-3b84-8eef6d854f47-1ddcb7b7 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-da5bc5d1-5870-faa9-f42d-73310396d194-523a505f {
+  #w-node-cd193904-5227-c440-3b84-8eef6d854f4a-1ddcb7b7 {
     grid-area: 1 / 2 / 2 / 4;
   }
 
-  #w-node-_8402628b-b44e-9f04-36d7-49de7eaa169b-523a505f {
+  #w-node-ad7761c5-0720-1086-f378-34e757b0cffa-1ddcb7b7 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-_8402628b-b44e-9f04-36d7-49de7eaa169e-523a505f {
+  #w-node-ad7761c5-0720-1086-f378-34e757b0cffd-1ddcb7b7 {
     grid-area: 1 / 2 / 2 / 4;
   }
 
-  #w-node-_63d9265d-44e4-fe1b-fb89-961a35810217-523a505f {
+  #w-node-_9f7e7334-9ae7-5911-fafe-fba72652201d-1ddcb7b7 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-_63d9265d-44e4-fe1b-fb89-961a3581021a-523a505f {
+  #w-node-_9f7e7334-9ae7-5911-fafe-fba726522020-1ddcb7b7 {
     grid-area: 1 / 2 / 2 / 4;
   }
 
-  #w-node-cd193904-5227-c440-3b84-8eef6d854f47-523a5060 {
+  #w-node-c2b652eb-a6a6-0a7e-9c10-9efbc862e0e1-1ddcb7b7 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-cd193904-5227-c440-3b84-8eef6d854f4a-523a5060 {
+  #w-node-c2b652eb-a6a6-0a7e-9c10-9efbc862e0e4-1ddcb7b7 {
     grid-area: 1 / 2 / 2 / 4;
   }
 
-  #w-node-ad7761c5-0720-1086-f378-34e757b0cffa-523a5060 {
+  #w-node-_34dcb27b-e423-35af-8dd0-6545b5f0bb02-1ddcb7b7 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-ad7761c5-0720-1086-f378-34e757b0cffd-523a5060 {
+  #w-node-_34dcb27b-e423-35af-8dd0-6545b5f0bb05-1ddcb7b7 {
     grid-area: 1 / 2 / 2 / 4;
   }
 
-  #w-node-_9f7e7334-9ae7-5911-fafe-fba72652201d-523a5060 {
+  #w-node-_32f9502b-72a1-33f0-a67d-4b6460ba94d4-1ddcb7b7 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 
-  #w-node-_9f7e7334-9ae7-5911-fafe-fba726522020-523a5060 {
-    grid-area: 1 / 2 / 2 / 4;
-  }
-
-  #w-node-c2b652eb-a6a6-0a7e-9c10-9efbc862e0e1-523a5060 {
-    grid-area: span 1 / span 1 / span 1 / span 1;
-  }
-
-  #w-node-c2b652eb-a6a6-0a7e-9c10-9efbc862e0e4-523a5060 {
-    grid-area: 1 / 2 / 2 / 4;
-  }
-
-  #w-node-_34dcb27b-e423-35af-8dd0-6545b5f0bb02-523a5060 {
-    grid-area: span 1 / span 1 / span 1 / span 1;
-  }
-
-  #w-node-_34dcb27b-e423-35af-8dd0-6545b5f0bb05-523a5060 {
-    grid-area: 1 / 2 / 2 / 4;
-  }
-
-  #w-node-_32f9502b-72a1-33f0-a67d-4b6460ba94d4-523a5060 {
-    grid-area: span 1 / span 1 / span 1 / span 1;
-  }
-
-  #w-node-_32f9502b-72a1-33f0-a67d-4b6460ba94d7-523a5060 {
+  #w-node-_32f9502b-72a1-33f0-a67d-4b6460ba94d7-1ddcb7b7 {
     grid-area: 1 / 2 / 2 / 4;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a544-523a505b {
+  #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a544-1ddcb7b2 {
     grid-area: span 1 / span 1 / span 1 / span 1;
     align-self: auto;
     justify-self: auto;
@@ -3176,22 +3122,12 @@ figcaption {
 }
 
 @media screen and (max-width: 767px) {
-  #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a4ca-523a505b, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a507-523a505b, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a544-523a505b {
+  #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a4ca-1ddcb7b2, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a507-1ddcb7b2, #w-node-_3708f77a-3338-9c31-08c8-e646bdf0a544-1ddcb7b2 {
     grid-area: span 1 / span 2 / span 1 / span 2;
   }
 
   #w-node-_5c141f12-d9d8-ebed-f29e-6c4978afe931-cd8efba7, #w-node-_45ed9a9d-a0f6-dd96-4c58-f563f8c0af7b-cd8efba7 {
     grid-area: span 1 / span 1 / span 1 / span 1;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  #w-node-e0fb658a-c97f-5ea3-4c72-bec70d73f57a-cd8efba7, #w-node-e0fb658a-c97f-5ea3-4c72-bec70d73f57c-cd8efba7 {
-    grid-area: Area;
-  }
-
-  #w-node-e0fb658a-c97f-5ea3-4c72-bec70d73f57e-cd8efba7 {
-    align-self: center;
   }
 }
 
